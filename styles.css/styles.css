@@ -1,0 +1,166 @@
+body {
+	height: 100vh;
+	width: 100vw;
+	margin: 0;
+	padding: 0;
+	background: rgb(182, 255, 255);
+	background: linear-gradient(
+		0deg,
+		rgba(182, 255, 255, 1) 0%,
+		rgba(0, 212, 255, 1) 100%
+	);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.world {
+	height: 800px;
+	width: 1000px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid black;
+}
+.robot {
+	position: relative;
+}
+
+.head {
+	position: relative;
+	left: 25%;
+	transition: 1s;
+}
+.head:hover {
+	transform: rotate(180deg);
+}
+.mouth {
+	position: absolute;
+	top: 65%;
+	left: 22%;
+}
+.left-eye {
+	position: absolute;
+	top: 35%;
+	left: 22%;
+}
+.right-eye {
+	position: absolute;
+	top: 35%;
+	left: 59%;
+}
+.body {
+	margin-top: 50px;
+}
+
+.name {
+	position: absolute;
+	top: 29%;
+}
+.right-arm {
+	position: absolute;
+	right: 0%;
+	top: 28.5%;
+}
+.right-hand {
+	position: absolute;
+	right: 100%;
+	top: 95%;
+}
+.left-hand {
+	position: absolute;
+	right: 100%;
+	top: 45%;
+}
+.right-leg {
+	position: absolute;
+	left: 63%;
+	top: 57%;
+	transform: rotate(180deg);
+}
+.right-leg:hover {
+	position: absolute;
+	left: 53%;
+	top: 57%;
+	transform: rotate(180deg);
+}
+.left-leg {
+	position: absolute;
+	left: 19%;
+	top: 57%;
+	transform: rotate(180deg);
+}
+.left-leg:hover {
+	position: absolute;
+	left: 25%;
+	top: 57%;
+	transform: rotate(180deg);
+}
+.robot .head {
+	width: 200px;
+	height: 150px;
+	border-radius: 25px 25px 0 0;
+}
+
+.robot .eye {
+	width: 25px;
+	height: 25px;
+}
+
+.robot .mouth {
+	width: 100px;
+	height: 25px;
+	border-radius: 0 0 25px 25px;
+}
+
+.robot .body {
+	width: 400px;
+	height: 500px;
+}
+
+.robot .torso {
+	width: 400px;
+	height: 200px;
+	border-radius: 0 0 25px 25px;
+}
+
+.robot .torso .name {
+	width: 100%;
+	text-align: center;
+	font-family: monospace;
+	font-size: 40px;
+	font-weight: 900;
+	color: aliceblue;
+	bottom: -50px;
+}
+
+.robot .arm {
+	width: 50px;
+	height: 120px;
+}
+
+.robot .hand {
+	width: 50px;
+	height: 50px;
+}
+
+.robot .leg {
+	width: 50px;
+	height: 100px;
+}
+
+.robot .foot {
+	height: 50px;
+	width: 100px;
+}
+
+.lightest-colour {
+	background-color: aliceblue;
+}
+
+.light-colour {
+	background-color: black;
+}
+
+.dark-colour {
+	background-color: slateblue;
+}
